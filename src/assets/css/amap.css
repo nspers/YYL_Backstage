@@ -1,0 +1,60 @@
+.amap-copyright,
+.amap-logo {
+    display: none !important;
+}
+
+.amap-container {
+    background: #eee !important;
+}
+
+.amap-marker-container {
+    height: 0;
+    line-height: normal;
+    position: relative;
+}
+
+.amap-marker-text {
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-align: center;
+    padding: 3px 8px;
+    width: max-content;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.amap-marker-text::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: calc(50% - 8px);
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-top: 8px solid rgba(0, 0, 0, .6);
+    border-bottom: none;
+}
+
+.amap-marker-cluster {
+    width: 52px;
+    height: 64px;
+    font-size: 16px;
+    padding-top: 13px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    box-sizing: border-box;
+    background: url('../../../static/data/image/marker.png') no-repeat;
+}
+
+.black {
+    color: #000;
+    background: #fff;
+}
+
+.black::after {
+    border-top-color: #fff;
+}
